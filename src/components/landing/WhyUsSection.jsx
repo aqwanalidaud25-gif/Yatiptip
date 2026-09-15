@@ -1,0 +1,3 @@
+import FeatureCard from './FeatureCard'
+import HighlightFeatureCard from './HighlightFeatureCard'
+export default function WhyUsSection() { return <section className="yt-section yt-why"><div className="yt-section__intro"><div><span className="yt-label">KENAPA YATIPTIP</span><h2>Jasa titip yang dirapikan untuk semua wilayah.</h2></div><p>Semua detail order, penawaran, pembayaran, dan bukti tersusun jelas agar kamu bisa titip dengan tenang.</p></div><div className="yt-why__grid"><HighlightFeatureCard /><FeatureCard title="Mitra terverifikasi" icon="shield" /><FeatureCard title="Bukti permanen" icon="camera" /><FeatureCard title="Batch antar wilayah" icon="route" /><FeatureCard title="Harga disetujui dulu" icon="handshake" dark /></div></section> }

@@ -1,0 +1,1 @@
+export default function Tag({ label = 'Jabodetabek', highlight = false }) { return <span className={`yt-tag${highlight ? ' yt-tag--highlight' : ''}`}>{label}</span> }

@@ -1,0 +1,1 @@
+export default function StatItem({ value = '120+', label = 'KOTA & PULAU' }) { return <div className="yt-stat"><strong>{value}</strong><span>{label}</span></div> }

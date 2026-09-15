@@ -1,0 +1,1 @@
+export default function MapPlaceholder({ label = 'peta cakupan Indonesia — titik mitra per wilayah' }) { return <div className="yt-map-placeholder"><span>INDONESIA</span><p>{label}</p></div> }

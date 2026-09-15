@@ -1,0 +1,1 @@
+export default function TrackingFloatingCard({ orderId = '#YTP-0003', customer = 'Rina J. — Ternate', progress = 70 }) { return <div className="yt-tracking"><span>SEDANG DIANTAR</span><strong>{orderId}</strong><p>{customer}</p><div className="yt-progress"><i style={{ width: `${progress}%` }} /></div></div> }

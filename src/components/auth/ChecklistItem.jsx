@@ -1,0 +1,2 @@
+import IconCheck from '../ui/IconCheck'
+export default function ChecklistItem({ children = 'Quote engine dengan fee platform otomatis' }) { return <li className="yt-checklist-item"><IconCheck /><span>{children}</span></li> }

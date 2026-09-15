@@ -1,0 +1,5 @@
+import { ShieldCheck } from 'lucide-react'
+import RouteIllustrationCard from './RouteIllustrationCard'
+import TrackingFloatingCard from './TrackingFloatingCard'
+
+export default function CourierShowcase() { return <section className="yt-section yt-showcase"><div className="yt-showcase__lead"><span className="yt-showcase__verified"><ShieldCheck size={14} /> MITRA TERVERIFIKASI</span><div className="yt-showcase__scenery" aria-hidden="true"><i /><b /><em /></div><div className="yt-showcase__illustration" aria-hidden="true"><i /><b /><em /></div><TrackingFloatingCard /><div className="yt-showcase__caption"><strong>Mitra yang benar-benar ada di jalan</strong><span>4,9 RATA-RATA RATING</span></div></div><div className="yt-showcase__routes"><RouteIllustrationCard /><RouteIllustrationCard variant="boat" title="Sampai pulau kecil" desc="120+ wilayah terlayani" /></div></section> }

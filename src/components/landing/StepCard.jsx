@@ -1,0 +1,1 @@
+export default function StepCard({ number = 1, title = 'Pesan lewat form', desc = 'Pilih layanan dan wilayah, isi detail titipan.', dark = false }) { return <article className={`yt-step-card${dark ? ' yt-step-card--dark' : ''}`}><span>{String(number).padStart(2, '0')}</span><h3>{title}</h3><p>{desc}</p></article> }
