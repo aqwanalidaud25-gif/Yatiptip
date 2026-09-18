@@ -45,7 +45,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
 .yt-navbar__links a { color: rgba(11, 13, 11, .6); font-size: .78rem; }
 .yt-navbar__links a.is-active, .yt-navbar__links a:hover { color: var(--color-dark); font-weight: 700; }
 .yt-navbar__actions { gap: 14px; }
-.yt-navbar__actions .yt-field { min-width: 145px; }
+.yt-navbar__actions .yt-field { margin-bottom: 0; min-width: 145px; }
 .yt-navbar__actions .yt-field__control { border: 0; padding: 0; }
 .yt-navbar__menu { background: transparent; border: 0; display: none; }
 .yt-navbar__mobile-panel { display: none; }
