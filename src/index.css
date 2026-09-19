@@ -212,8 +212,20 @@ h1, h2, h3 { font-family: var(--font-heading); }
 .yt-ticker__status { font-size: .84rem; }
 .yt-ticker__route { gap: 6px; }
 .yt-ticker__route span { border-radius: 50%; height: 34px; width: 34px; }
+.yt-ticker__route > span { animation: yt-ticker-route-forward 2.8s linear infinite; will-change: transform; }
+.yt-ticker__route > span:nth-child(2) { animation-delay: .3s; }
+.yt-ticker__route > span:nth-child(3) { animation-delay: .6s; }
 .yt-ticker__cities { gap: 18px; font-size: .8rem; }
 .yt-ticker__cities { word-spacing: 9px; }
+
+@keyframes yt-ticker-route-forward {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(22px, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yt-ticker__route > span { animation: none; will-change: auto; }
+}
 .yt-services { padding: 26px 32px 76px; }
 .yt-section__eyebrow { margin-bottom: 22px; }
 .yt-section__eyebrow span, .yt-label { color: #7c8779; font-size: .78rem; letter-spacing: .01em; }
