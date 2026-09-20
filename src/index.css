@@ -435,3 +435,12 @@ h1, h2, h3 { font-family: var(--font-heading); }
   .yt-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .yt-login-page__form-panel { padding: 0; }
 }
+
+/* Reference palette alignment. */
+.yt-top-flow { background: radial-gradient(ellipse 90% 58% at 50% 0%, rgba(201, 242, 77, .18) 0%, rgba(252, 252, 250, .86) 54%, var(--color-light) 100%); }
+.yt-showcase__lead { background: linear-gradient(160deg, rgba(201, 242, 77, .38) 0%, rgba(65, 114, 47, .58) 58%, var(--color-accent) 100%); }
+.yt-route-card { background: linear-gradient(160deg, rgba(201, 242, 77, .28), rgba(65, 114, 47, .58)); }
+.yt-route-card--boat { background: linear-gradient(160deg, rgba(201, 242, 77, .36), var(--color-accent)); }
+.yt-why, .yt-coverage { background: rgba(252, 252, 250, .72); }
+.yt-how { background: radial-gradient(ellipse 45% 65% at 12% 100%, rgba(201, 242, 77, .2) 0%, rgba(252, 252, 250, .72) 46%, transparent 78%), var(--color-light); }
+.yt-cta { background: linear-gradient(120deg, var(--color-primary) 0%, rgba(65, 114, 47, .58) 55%, var(--color-accent) 100%); }

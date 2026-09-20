@@ -4,20 +4,18 @@ YATIPTIP adalah aplikasi layanan titip beli, titip antar, dan pencarian barang y
 
 ## Fitur
 
-- Landing page untuk memperkenalkan layanan YATIPTIP.
-- Navigasi responsif untuk desktop, tablet, dan handphone.
-- Menu mobile interaktif dengan pilihan wilayah dan aksi pemesanan.
-- Informasi cakupan wilayah, alur layanan, dan ajakan menjadi mitra.
-- Halaman login untuk console admin dan operator wilayah.
+ Landing page layanan Titip Beli, Titip Antar, dan Cari Barang.
+ Navigasi responsif untuk desktop, tablet, dan handphone.
+ Menu mobile interaktif dengan pilihan wilayah dan aksi pemesanan.
+ Hero section dengan ticker status pengiriman.
+ Ikon motor, mobil, dan truk pada ticker bergerak lurus dari kiri ke kanan dengan kecepatan berbeda sehingga dapat saling menyusul.
+ Section showcase mitra, Why YATIPTIP, Cara Kerja, Cakupan Nasional, CTA mitra, dan footer.
+ Halaman login untuk console admin dan operator wilayah pada route `/login`.
+ Palette visual utama: `#C9F24D`, `#0B0D0B`, `#FCFCFA`, dan `#41722F`.
 
 ## Teknologi
 
-- React 19
-- Vite
-- Lucide React
-- ESLint
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+ React Compiler melalui Babel plugin
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
 ## Menjalankan Secara Lokal
@@ -39,11 +37,17 @@ npm run preview
 
 ## Struktur Utama
 
-- `src/components/landing`: section dan kartu landing page.
-- `src/components/layout`: navbar dan footer.
-- `src/components/auth`: komponen halaman login.
-- `src/components/ui`: komponen UI yang dapat digunakan kembali.
-- `src/pages`: halaman landing dan login.
+ `src/components/landing`: section, ilustrasi, ticker, dan kartu landing page.
+ `src/components/layout`: navbar dan footer.
+ `src/components/auth`: komponen halaman login.
+ `src/components/ui`: komponen UI yang dapat digunakan kembali.
+ `src/pages`: halaman landing dan login.
+ `src/index.css`: design tokens, layout, responsive styling, dan animasi ticker.
+
+ ## Route
+
+ `/`: landing page YATIPTIP.
+ `/login`: halaman login admin dan operator wilayah.
 
 The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
