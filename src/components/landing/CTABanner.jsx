@@ -1,3 +1,0 @@
-import { ShieldCheck } from 'lucide-react'
-import Button from '../ui/Button'
-export default function CTABanner() { return <section className="yt-cta" id="jadi-mitra"><h2>Wilayahmu belum ada di daftar?</h2><p>Daftar sebagai Jastiper mitra — kamu jalankan layanan di daerahmu, kami sediakan sistem order, quote, dan buktinya.</p><div><Button>Gabung jadi Jastiper</Button><Button variant="outline">Mulai Pesan Sekarang</Button></div><small><ShieldCheck size={13} /> Pembayaran terverifikasi admin · bukti tersimpan permanen</small></section> }

@@ -1,4 +1,4 @@
-import NewsletterForm from '../landing/NewsletterForm'
+import NewsletterForm from '../auth/landing/NewsletterForm'
 import Logo from '../ui/Logo'
 
 const columns = [['LAYANAN', 'Titip Beli', 'Titip Antar', 'Cari Barang', 'Batch antar wilayah'], ['MITRA', 'Jadi mitra', 'Syarat mitra', 'Buka wilayah baru', 'Panduan bukti'], ['BANTUAN', 'Cara pesan', 'Biaya & fee', 'Lacak order', 'Hubungi kami']]

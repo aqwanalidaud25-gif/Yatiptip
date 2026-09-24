@@ -1,5 +1,5 @@
 import MapPlaceholder from './MapPlaceholder'
 import StatItem from './StatItem'
-import Tag from '../ui/Tag'
+import Tag from '../../ui/Tag'
 const areas = ['Jabodetabek', 'Bandung', 'Bali', 'Lombok', 'Makassar', 'Kep. Riau', 'Ternate', 'Sorong']
 export default function CoverageSection() { return <section className="yt-section yt-coverage" id="cakupan"><div className="yt-section__intro"><div><span className="yt-label">CAKUPAN NASIONAL</span><h2>Dari kota besar sampai pulau kecil.</h2></div><p>YATIPTIP bekerja dengan jaringan Jastiper yang sudah ada di daerahnya masing-masing, jadi wilayah baru bisa dibuka tanpa kami harus hadir secara fisik.</p></div><div className="yt-coverage__grid"><MapPlaceholder /><div className="yt-coverage__details"><div><span className="yt-label">WILAYAH AKTIF</span><div className="yt-tags">{areas.map((area) => <Tag key={area} label={area} />)}<Tag label="+113 wilayah lainnya" highlight /></div></div><div className="yt-stats">{[['120+', 'KOTA & PULAU'], ['3.400', 'JASTIPER MITRA'], ['100%', 'ORDER BERBUKTI'], ['4,9', 'RATA-RATA RATING']].map(([value, label]) => <StatItem key={label} value={value} label={label} />)}</div></div></div></section> }

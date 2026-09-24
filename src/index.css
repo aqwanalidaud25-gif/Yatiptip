@@ -22,6 +22,7 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3, p { margin: 0; }
 h1, h2, h3 { font-family: var(--font-heading); }
 .yt-logo { align-items: center; color: var(--color-dark); display: inline-flex; gap: 10px; letter-spacing: -.04em; }
+.yt-logo__image { display: block; height: auto; object-fit: contain; width: 92px; }
 .yt-logo__mark { display: block; height: 26px; position: relative; width: 24px; }
 .yt-logo__mark i { background: var(--color-accent); border-radius: 100% 0 100% 100%; bottom: 1px; display: block; height: 21px; left: 3px; position: absolute; transform: rotate(-21deg); width: 20px; }
 .yt-logo__mark b { background: var(--color-primary); border-radius: 100% 0 100% 0; display: block; height: 12px; left: 1px; position: absolute; top: 1px; transform: rotate(-19deg); width: 8px; }
@@ -444,3 +445,109 @@ h1, h2, h3 { font-family: var(--font-heading); }
 .yt-why, .yt-coverage { background: rgba(252, 252, 250, .72); }
 .yt-how { background: radial-gradient(ellipse 45% 65% at 12% 100%, rgba(201, 242, 77, .2) 0%, rgba(252, 252, 250, .72) 46%, transparent 78%), var(--color-light); }
 .yt-cta { background: linear-gradient(120deg, var(--color-primary) 0%, rgba(65, 114, 47, .58) 55%, var(--color-accent) 1000%); }
+
+/* Authentication and onboarding flow. */
+.yt-auth-page { background: var(--color-light); color: var(--color-dark); min-height: 100vh; }
+.yt-auth-header { align-items: center; border-bottom: 1px solid rgba(11, 13, 11, .08); display: flex; height: 72px; justify-content: space-between; margin: 0 auto; max-width: 1120px; padding: 0 32px; }
+.yt-auth-header__back { color: rgba(11, 13, 11, .68); font-size: .78rem; font-weight: 600; }
+.yt-registration-layout { align-items: start; display: grid; gap: 72px; grid-template-columns: minmax(0, 1fr) 410px; margin: 0 auto; max-width: 1120px; padding: 56px 32px 80px; }
+.yt-registration-layout--freelance { grid-template-columns: minmax(0, 1fr) 410px; }
+.yt-auth-intro { padding-top: 14px; }
+.yt-auth-kicker { background: rgba(201, 242, 77, .2); border: 1px solid rgba(65, 114, 47, .14); border-radius: 999px; color: var(--color-accent); display: inline-flex; font-size: .65rem; font-weight: 800; letter-spacing: .08em; padding: 7px 12px; }
+.yt-auth-intro h1 { font-size: clamp(2.4rem, 4.4vw, 4.15rem); letter-spacing: -.07em; line-height: .98; margin: 28px 0 18px; max-width: 570px; }
+.yt-auth-intro > p { color: rgba(11, 13, 11, .68); font-size: .98rem; line-height: 1.6; max-width: 520px; }
+.yt-auth-benefits { display: grid; gap: 17px; list-style: none; margin: 30px 0 0; max-width: 540px; padding: 0; }
+.yt-auth-benefits .yt-checklist-item { align-items: flex-start; font-size: .88rem; gap: 11px; line-height: 1.35; }
+.yt-auth-benefits .yt-icon-check { height: 20px; margin-top: 1px; width: 20px; }
+.yt-auth-benefits .yt-checklist-item > span:last-child { display: grid; gap: 3px; }
+.yt-auth-benefits strong { font-weight: 800; }
+.yt-auth-benefits small { color: rgba(11, 13, 11, .62); font-size: .78rem; line-height: 1.45; }
+.yt-auth-benefit-card { background: rgba(252, 252, 250, .8); border: 1px solid rgba(11, 13, 11, .08); border-radius: 18px; box-shadow: 0 16px 36px rgba(11, 13, 11, .04); margin-top: 30px; max-width: 540px; padding: 21px 20px; }
+.yt-auth-benefit-card .yt-auth-benefits { margin: 0; }
+.yt-auth-card { background: var(--color-light); border: 1px solid rgba(11, 13, 11, .09); border-radius: 26px; box-shadow: 0 22px 60px rgba(11, 13, 11, .07); padding: 30px 28px 25px; }
+.yt-auth-card h2 { font-size: 1.55rem; letter-spacing: -.05em; line-height: 1.1; }
+.yt-auth-card__subtitle { color: rgba(11, 13, 11, .62); font-size: .78rem; line-height: 1.45; margin: 7px 0 25px; }
+.yt-registration-card .yt-field { margin-bottom: 15px; }
+.yt-registration-card .yt-field__label { font-size: .68rem; margin-bottom: 6px; }
+.yt-registration-card .yt-field__control { background: var(--color-light); border-radius: 12px; min-height: 43px; }
+.yt-registration-card textarea { background: var(--color-light); border: 1px solid rgba(11, 13, 11, .16); border-radius: 12px; display: block; font: inherit; min-height: 76px; outline: 0; padding: 12px 14px; resize: vertical; width: 100%; }
+.yt-registration-card textarea:focus { border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(201, 242, 77, .35); }
+.yt-registration-card > .yt-button { margin-top: 4px; width: 100%; }
+.yt-auth-disclaimer { color: rgba(11, 13, 11, .52); display: block; font-size: .63rem; line-height: 1.45; margin: 12px auto 0; max-width: 330px; text-align: center; }
+.yt-form-success { background: rgba(201, 242, 77, .24); border-radius: 9px; color: var(--color-accent); font-size: .72rem; line-height: 1.4; margin-top: 12px; padding: 9px 10px; }
+.yt-form-section-label { color: var(--color-accent); display: block; font-size: .65rem; font-weight: 800; letter-spacing: .1em; margin: 22px 0 10px; }
+.yt-form-grid, .yt-upload-grid { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.yt-upload-field { display: block; min-width: 0; }
+.yt-upload-field input { height: 1px; opacity: 0; position: absolute; width: 1px; }
+.yt-upload-field .yt-field__label b { color: var(--color-accent); }
+.yt-upload-field__box { align-items: center; border: 1px dashed rgba(11, 13, 11, .22); border-radius: 12px; color: rgba(11, 13, 11, .58); display: flex; flex-direction: column; gap: 4px; justify-content: center; min-height: 78px; padding: 10px; text-align: center; }
+.yt-upload-field__box svg { color: var(--color-accent); }
+.yt-upload-field__box strong { font-size: .66rem; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; }
+.yt-upload-field__box small { font-size: .58rem; }
+.yt-role-login-page { background: var(--color-light); }
+.yt-role-login-page .yt-login-hero { background: radial-gradient(circle at 100% 0%, rgba(201, 242, 77, .48), transparent 53%), var(--color-light); padding: 44px max(40px, calc((100vw - 1120px) / 2)); }
+.yt-role-login-page .yt-login-hero h1 { font-size: clamp(2.25rem, 3.1vw, 3.45rem); line-height: 1.02; margin-bottom: 28px; max-width: 520px; }
+.yt-role-login-page .yt-login-hero ul { gap: 11px; max-width: 450px; }
+.yt-role-login-page .yt-checklist-item { font-size: .82rem; gap: 9px; line-height: 1.35; }
+.yt-role-login-page .yt-checklist-item .yt-icon-check { height: 20px; width: 20px; }
+.yt-role-login-page .yt-login-page__form-panel { align-items: center; background: rgba(252, 252, 250, .74); justify-content: center; padding: 40px clamp(28px, 5vw, 76px); }
+.yt-role-login-page .yt-login-form { max-width: 410px; padding: 28px 26px 24px; width: 100%; }
+.yt-role-login-page .yt-login-form h2 { font-size: 1.45rem; }
+.yt-role-login-page .yt-login-form > p { font-size: .74rem; line-height: 1.4; margin: 5px 0 19px; }
+.yt-role-login-page .yt-login-form .yt-field { margin-bottom: 13px; }
+.yt-role-login-page .yt-login-form .yt-field__label { font-size: .7rem; margin-bottom: 5px; }
+.yt-role-login-page .yt-login-form .yt-field__control { min-height: 43px; }
+.yt-role-login-page .yt-login-form__options { margin: 0 0 18px; }
+.yt-role-login-page .yt-login-form__options a, .yt-role-login-page .yt-checkbox { font-size: .72rem; }
+.yt-role-login-page .yt-login-form__submit { margin-bottom: 18px; min-height: 45px; }
+.yt-role-switch { color: var(--color-accent); display: block; font-size: .74rem; font-weight: 800; margin: -4px 0 18px; text-align: center; }
+.yt-role-login-page .yt-login-form > small { font-size: .64rem; line-height: 1.4; }
+
+@media (max-width: 900px) {
+  .yt-registration-layout { gap: 36px; grid-template-columns: minmax(0, 1fr) 380px; }
+  .yt-auth-intro h1 { font-size: clamp(2.35rem, 5vw, 3.3rem); }
+  .yt-role-login-page { display: grid; grid-template-columns: 52.5% 47.5%; min-height: 100vh; }
+  .yt-role-login-page .yt-login-hero { padding: 40px 32px; }
+  .yt-role-login-page .yt-login-page__form-panel { min-width: 0; padding: 28px 24px; }
+  .yt-role-login-page .yt-login-form { max-width: 410px; padding: 26px 22px 23px; }
+}
+
+@media (max-width: 720px) {
+  .yt-auth-header { height: 64px; padding: 0 20px; }
+  .yt-auth-header .yt-logo__image { width: 82px; }
+  .yt-registration-layout, .yt-registration-layout--freelance { display: block; padding: 38px 20px 56px; }
+  .yt-auth-intro { padding-top: 0; }
+  .yt-auth-intro h1 { font-size: clamp(2.25rem, 10vw, 3.2rem); }
+  .yt-auth-card { border-radius: 20px; margin-top: 36px; padding: 25px 20px 22px; }
+  .yt-form-grid, .yt-upload-grid { grid-template-columns: 1fr; }
+  .yt-role-login-page { display: block; }
+  .yt-role-login-page .yt-login-hero { min-height: auto; padding: 34px 22px 48px; }
+  .yt-role-login-page .yt-login-hero > .yt-badge { margin-top: 78px; }
+  .yt-role-login-page .yt-login-page__form-panel { align-items: stretch; padding: 0 20px 40px; }
+  .yt-role-login-page .yt-login-form { border: 0; border-radius: 0; box-shadow: none; max-width: 410px; padding: 34px 0 8px; }
+}
+
+/* Service picker opened by the hero CTA. */
+.yt-service-picker { align-items: center; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); background: rgba(11, 13, 11, .24); display: flex; inset: 0; justify-content: center; position: fixed; text-align: left; z-index: 30; }
+.yt-service-picker__panel { background: var(--color-light); border: 1px solid rgba(11, 13, 11, .06); border-radius: 28px; box-shadow: 0 24px 80px rgba(11, 13, 11, .18); max-height: calc(100vh - 40px); overflow: auto; padding: 26px 22px 22px; width: min(384px, calc(100vw - 32px)); }
+.yt-service-picker__header { align-items: center; display: flex; gap: 13px; margin: 0 2px 21px; }
+.yt-service-picker__back { align-items: center; background: transparent; border: 1px solid rgba(11, 13, 11, .08); border-radius: 50%; color: var(--color-dark); cursor: pointer; display: flex; height: 36px; justify-content: center; padding: 0; width: 36px; }
+.yt-service-picker__header h2 { font-size: 1.35rem; letter-spacing: -.05em; line-height: 1; }
+.yt-service-picker__header p { color: rgba(11, 13, 11, .66); font-size: .78rem; margin-top: 5px; }
+.yt-service-picker__list { display: grid; gap: 12px; }
+.yt-service-picker__card { align-items: flex-start; background: var(--color-light); border: 1px solid rgba(11, 13, 11, .08); border-radius: 24px; color: var(--color-dark); cursor: pointer; display: grid; grid-template-columns: 42px 1fr 18px; min-height: 160px; padding: 19px; position: relative; text-align: left; transition: transform .2s, border-color .2s; width: 100%; }
+.yt-service-picker__card:hover { border-color: rgba(65, 114, 47, .35); transform: translateY(-2px); }
+.yt-service-picker__card.is-dark { background: var(--color-dark); border-color: var(--color-dark); color: var(--color-light); }
+.yt-service-picker__icon { align-items: center; background: rgba(201, 242, 77, .2); border-radius: 50%; color: var(--color-accent); display: flex; height: 42px; justify-content: center; width: 42px; }
+.yt-service-picker__card.is-dark .yt-service-picker__icon { background: var(--color-primary); color: var(--color-dark); }
+.yt-service-picker__arrow { justify-self: end; margin-top: 5px; }
+.yt-service-picker__copy { align-self: end; display: grid; gap: 5px; grid-column: 1 / -1; margin-top: 13px; }
+.yt-service-picker__copy strong { font-family: var(--font-heading); font-size: 1.04rem; letter-spacing: -.03em; }
+.yt-service-picker__copy small { color: rgba(11, 13, 11, .68); font-size: .82rem; line-height: 1.35; max-width: 300px; }
+.yt-service-picker__card.is-dark .yt-service-picker__copy small { color: rgba(252, 252, 250, .7); }
+.yt-service-picker__note { color: rgba(11, 13, 11, .58); font-size: .72rem; line-height: 1.4; margin: 22px auto 0; max-width: 290px; text-align: center; }
+
+@media (max-width: 520px) {
+  .yt-service-picker__panel { border-radius: 24px; padding: 22px 18px 20px; }
+  .yt-service-picker__card { min-height: 150px; }
+}

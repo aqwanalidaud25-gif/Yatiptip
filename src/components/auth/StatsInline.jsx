@@ -1,7 +1,7 @@
 const defaultStats = [
 	['120+', 'WILAYAH'],
 	['3.400', 'MITRA'],
-	['100%', 'BERBUKTI'],
+	['100%', 'TERBUKTI'],
 ]
 
 export default function StatsInline({ stats = defaultStats }) {

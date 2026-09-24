@@ -1,3 +1,3 @@
-export default function Input({ label = 'Email', type = 'text', placeholder = '', value = '', onChange = () => {}, rightIcon = null, name }) {
-  return <label className="yt-field"><span className="yt-field__label">{label}</span><span className="yt-field__control"><input name={name} type={type} placeholder={placeholder} value={value} onChange={onChange} />{rightIcon}</span></label>
+export default function Input({ label = 'Email', type = 'text', placeholder = '', value = '', onChange = () => {}, rightIcon = null, name, ...inputProps }) {
+  return <label className="yt-field"><span className="yt-field__label">{label}</span><span className="yt-field__control"><input name={name} type={type} placeholder={placeholder} value={value} onChange={onChange} {...inputProps} />{rightIcon}</span></label>
 }
