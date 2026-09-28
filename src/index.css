@@ -186,6 +186,8 @@ h1, h2, h3 { font-family: var(--font-heading); }
 .yt-login-form__options { align-items: center; display: flex; justify-content: space-between; margin: 2px 0 24px; }
 .yt-login-form__options a { color: var(--color-accent); font-size: .8rem; font-weight: 700; }
 .yt-login-form__submit { margin-bottom: 23px; }
+.yt-login-form__role-options { display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: center; margin: -7px 0 20px; }
+.yt-login-form__role-options a { color: var(--color-accent); font-size: .75rem; font-weight: 700; }
 .yt-login-form > small { align-items: flex-start; color: rgba(11, 13, 11, .52); display: flex; font-size: .7rem; gap: 7px; line-height: 1.45; }
 .yt-login-page { background: var(--color-light); display: grid; grid-template-columns: 52.5% 47.5%; min-height: 100vh; overflow: hidden; }
 .yt-login-page__form-panel { align-items: center; background: rgba(252, 252, 250, .72); display: flex; justify-content: center; padding: 36px; }
