@@ -4,7 +4,7 @@ import Button from '../components/ui/Button'
 import Input from '../components/ui/Input'
 
 const serviceDetails = {
-  'titip-beli': { title: 'Titip Beli', prompt: 'Barang apa yang ingin dibelikan?', placeholder: 'Nama Barang, merek, ukuran, atau tautan produk' },
+  'titip-beli': { title: 'Titip Beli', prompt: 'Barang apa yang ingin dibelikan?', placeholder: 'Nama barang, merek, ukuran, atau tautan produk' },
   'titip-antar': { title: 'Titip Antar', prompt: 'Barang apa yang ingin diantarkan?', placeholder: 'Deskripsi barang dan perkiraan ukuran' },
   'cari-barang': { title: 'Cari Barang', prompt: 'Barang apa yang sedang dicari?', placeholder: 'Nama barang, spesifikasi, merek, atau foto referensi' },
 }
