@@ -17,6 +17,5 @@ export default function HeroSection({ title = 'Titip Apa Saja, Ke Mana Saja', ac
       document.removeEventListener('keydown', closeOnEscape)
     }
   }, [isPickerOpen])
-  const chooseService = (service) => { window.location.assign(`/pesan/${service}`) }
-  return <section className="yt-hero" id="top"><Badge text="Jasa Titip Terverifikasi · 120+ Wilayah Indonesia" /><h1>{title} <span>{accent}</span></h1><p>{description}</p><div className="yt-hero__actions"><Button onClick={() => setIsPickerOpen(true)}>Mulai Pesan Sekarang</Button><Button href="/jastiper/daftar" variant="outline">Gabung jadi Jastiper</Button></div><LiveTicker />{isPickerOpen && <ServicePicker onClose={() => setIsPickerOpen(false)} onSelect={chooseService} />}</section>
+  return <section className="yt-hero" id="top"><Badge text="Jasa Titip Terverifikasi · 120+ Wilayah Indonesia" /><h1>{title} <span>{accent}</span></h1><p>{description}</p><div className="yt-hero__actions"><Button onClick={() => setIsPickerOpen(true)}>Mulai Pesan Sekarang</Button><Button href="/jastiper/daftar" variant="outline">Gabung jadi Jastiper</Button></div><LiveTicker />{isPickerOpen && <ServicePicker onClose={() => setIsPickerOpen(false)} />}</section>
 }

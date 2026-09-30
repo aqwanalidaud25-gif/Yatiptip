@@ -9,10 +9,8 @@ export default function UploadField({ label, name }) {
     if (!['image/jpeg', 'image/png'].includes(file.type) || file.size > 5 * 1024 * 1024) {
       event.target.value = ''
       setFileName('File JPG/PNG maksimal 5MB')
-      event.target.setCustomValidity('Pilih file JPG atau PNG dengan ukuran maksimal 5MB.')
       return
     }
-    event.target.setCustomValidity('')
     setFileName(file.name)
   }
   return <label className="yt-upload-field"><span className="yt-field__label">{label} <b>*</b></span><input name={name} type="file" accept="image/jpeg,image/png" onChange={handleChange} required /><span className="yt-upload-field__box"><Upload size={18} /><strong>{fileName || 'Klik untuk upload'}</strong><small>{fileName ? 'File siap diverifikasi' : 'JPG/PNG - max 5MB'}</small></span></label>
