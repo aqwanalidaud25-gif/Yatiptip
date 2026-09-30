@@ -9,7 +9,7 @@ const benefits = [
   ['Dashboard operator profesional', 'Kelola order masuk, quote, driver, dan verifikasi pembayaran di satu tempat.'],
   ['Payout harian otomatis', 'Sistem tunggu otomatis, kamu terima settlement setiap hari tanpa harus rekap manual.'],
   ['Multi-tenant terisolasi', 'Data operator wilayahmu 100% terpisah dari operator wilayah lain.'],
-  ['Support penuh saat verifikasi', 'Tim YatiPtip bantu proses Onboarding, aktivasi akun, dan setup awal.'],
+  ['Support penuh saat verifikasi', 'Tim YatiPtip bantu proses onboarding, aktivasi akun, dan setup awal.'],
 ]
 
 export default function OperatorRegistrationPage() {
