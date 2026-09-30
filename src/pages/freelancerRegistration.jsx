@@ -8,7 +8,7 @@ import UploadField from '../components/auth/UploadField'
 
 const benefits = [
   ['Verifikasi KTP wajib', 'untuk keamanan customer & operator.'],
-  ['Fee platform 10%', 'sama dengan operator wilayah.'],
+  ['Fee Platform 10%', 'sama dengan operator wilayah.'],
   ['Payout harian', 'ke rekening Anda.'],
   ['Kalau ada dispute', 'YatiPtip cover dulu - recovery dilakukan lewat payout.'],
 ]
